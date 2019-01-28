@@ -16,7 +16,7 @@
 	</tr>
 	<tr>
 		<td colspan="2">
-			<%@ include file="../home/navi-bar.jsp" %>
+			<%@ include file="../home/pre-navi-bar.jsp" %>
 		</td>
 	</tr>
 	<tr style="height : 300px">

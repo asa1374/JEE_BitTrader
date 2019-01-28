@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.ul-navi-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ul-navi-bar li{
+  float:left;
+}
+.ul-navi-bar li a {
+  display: block;
+  padding: 8px 16px;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+}
+.ul-navi-bar li a:hover {
+  color: white;
+}
+.ul-navi-bar li a.active {
+  color: white;
+}

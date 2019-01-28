@@ -6,7 +6,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="${context}/resources/css/style.css" />
 </head>
 <body>
 <table id="wrapper">
@@ -17,7 +16,7 @@
 	</tr>
 	<tr>
 		<td colspan="2">
-			<%@ include file="../home/navi-bar.jsp" %>
+			<%@ include file="../home/pre-navi-bar.jsp" %>
 		</td>
 	</tr>
 	<tr style="height : 300px">
