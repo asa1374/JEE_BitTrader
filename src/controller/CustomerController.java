@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import service.CustomerService;
 import service.CustomerServiceImpl;
 
-@WebServlet("/CustomerController")
+@WebServlet("/customer.do")
 public class CustomerController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	CustomerService service = CustomerServiceImpl.getInstance();
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		request.getRequestDispatcher("/WEB-INF/view/customer/main.jsp").forward(request, response);
 	}
 
 }

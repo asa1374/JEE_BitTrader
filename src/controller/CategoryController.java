@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import service.CategoryService;
 import service.CategoryServiceImpl;
-@WebServlet("/CategoryController")
+@WebServlet("/category.do")
 public class CategoryController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	CategoryService service = CategoryServiceImpl.getInstance();

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.grid-container-customer {
+  display: grid;
+  width: 70%;
+  grid-template-columns: auto auto;
+  background-color: #cceaff;
+  padding: 50px;
+  margin: auto;
+}
+.grid-item-customer {
+  border: 1.5px solid white;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}

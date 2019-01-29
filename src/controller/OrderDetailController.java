@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import service.OrderDetailService;
 import service.OrderDetailServiceImpl;
 
-@WebServlet("/OrderDetailController")
+@WebServlet("/orderdetail.do")
 public class OrderDetailController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	OrderDetailService service = OrderDetailServiceImpl.getInstance();

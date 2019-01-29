@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import service.OrderService;
 import service.OrderServiceimpl;
-@WebServlet("/OrderController")
+@WebServlet("/order.do")
 public class OrderController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	OrderService service = OrderServiceimpl.getInstance();

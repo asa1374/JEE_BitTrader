@@ -2,43 +2,6 @@
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<style>
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 3px;
-  background-color: #0098ff;
-  padding: 3px;
-}
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-}
-#item1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-#item2{
-	grid-column-start: 1;
-	grid-column-end: 4;
-}
-#item4{
-	display: grid;
-	grid-template-rows: 300px;
-	grid-
-}
-#item5{
-	grid-column-start: 2;
-	grid-column-end: 5;
-	text-align: center;
-}
-#item6{
-	grid-column-start: 1;
-	grid-column-end: 5;
-}
-</style>
 <jsp:include page="head.jsp"/>
 <body>
 	<div class="grid-container">

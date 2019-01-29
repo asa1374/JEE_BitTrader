@@ -1,48 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
+
+<jsp:include page="../home/head.jsp"/>
 <body>
-<table id="wrapper">
-	<tr>
-		<td colspan="2">
-			<%@ include file="../home/header.jsp" %>
-		</td>
-	</tr>
-	<tr>
-		<td colspan="2">
-			<%@ include file="../home/pre-navi-bar.jsp" %>
-		</td>
-	</tr>
-	<tr style="height : 300px">
-		<td width="30%">
-			<c:if test="${dest eq 'join-form' }">
-				<jsp:include page="side-join.jsp"/>			
-			</c:if>
-			<jsp:include page="side-menu.jsp"/>
-		</td>
-		<td>
+	<div class="grid-container">
+		<div class="item" id="item1"><jsp:include page="../home/header.jsp"/></div>
+		<div class="item" id="item2">
 			<c:choose>
-				<c:when test="${dest eq 'NONE' }">
-					<jsp:include page="side-join.jsp"/>
+				<c:when test="${dest eq 'pre'}">
+					<jsp:include page="../home/pre-navi-bar.jsp"/>
 				</c:when>
-				<c:when test="${dest eq 'join-foem' }">
-					<jsp:include page="register.jsp"/>
+				<c:when test="${dest eq 'post'}">
+					<jsp:include page="../home/post-navi-bar.jsp"/>
 				</c:when>
-				<c:when test="${dest eq 'member-detail' }">
-					<jsp:include page="member-detail.jsp"/>
-				</c:when>
-				<c:when test="${dest eq 'member-update' }">
-					<jsp:include page="member-update.jsp"/>
-				</c:when>
-			</c:choose>
-		</td>
-	</tr>
-</table>
+			</c:choose></div>
+		<div class="item" id="item3">Login</div>
+		<div class="item" id="item4"><jsp:include page="side-menu.jsp"/></div>
+		<div class="item" id="item5">
+			<div>
+				<jsp:include page="access.jsp"/>
+			</div>
+		</div>
+		<div class="item" id="item6"><jsp:include page="../home/footer.jsp"/></div>
+	</div>
 </body>
 </html>

@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import service.SupplierService;
 import service.SupplierServiceImpl;
-@WebServlet("/SupplierController")
+@WebServlet("/supplier.do")
 public class SupplierController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	SupplierService service = SupplierServiceImpl.getInstance();
